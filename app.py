@@ -74,10 +74,14 @@ def sharpen(image_path, options):
     image = get_image(image_path)
 
     if options == "0":
-        image = image.filter(ImageFilter.SHARPEN)
+        image = image.convert("L")
     elif options == "1":
-        image = image.filter(ImageFilter.DETAIL)
+        threshold=100
+        image = image.convert('L')  # Convert the image to grayscale
+        image = image.point(lambda x: 0 if x < threshold else 255, '1') # Convert to black and white
     elif options == "2":
+        image = image.filter(ImageFilter.DETAIL)
+    elif options == "3":
         image = image.filter(ImageFilter.UnsharpMask)
 
     image.save(image_path)

@@ -89,8 +89,8 @@
             <div class="card-header"><b>Adjust</b></div>
             <div class="card-body" style="font-size: 0.8rem">
               <form method="POST">
-                <div for="color"><b>Color</b></div>
-                <small>0 for black/white, 3 for oversaturated</small>
+                <div for="color"><b style="font-size: 1.2rem;">Color</b></div>
+                <small style="font-size: 1rem;">0 for black/white, 3 for oversaturated</small>
                 <div class="row">
                   <div class="col-9">
                     <input type="range" class="custom-range" min="0" max="3" step="0.1" value={{ slider['color'] }} id="color" name="color" onchange="updateTextInput('color_value', this.value);">
@@ -102,8 +102,8 @@
 
                 <hr class="my-1">
 
-                <div for="brightness"><b>Brightness</b></div>
-                <small>0 for complete black</small>
+                <div for="brightness"><b style="font-size: 1.2rem;">Brightness</b></div>
+                <small style="font-size: 1rem;">0 for complete black</small>
                 <div class="row">
                   <div class="col-9">
                     <input type="range" class="custom-range" min="0" max="3" step="0.1" value={{ slider['bright'] }} id="brightness" name="bright" onchange="updateTextInput('brightness_value', this.value);">
@@ -115,8 +115,8 @@
 
                 <hr class="my-1">
 
-                <div for="brightness"><b>Contrast</b></div>
-                <small>0 for solid grey image</small>
+                <div for="brightness"><b style="font-size: 1.2rem;">Contrast</b></div>
+                <small style="font-size: 1rem;">0 for solid grey image</small>
                 <div class="row">
                   <div class="col-9">
                     <input type="range" class="custom-range" min="0" max="3" step="0.1" value={{ slider['contrast'] }} id="contrast" name="contrast" onchange="updateTextInput('contrast_value', this.value);">
@@ -128,7 +128,7 @@
 
                 <hr class="my-1">
 
-                <div for="brightness"><b>Sharpness</b></div>
+                <div for="brightness"><b style="font-size: 1.2rem;">Sharpness</b></div>
                 <div class="row">
                   <div class="col-9">
                     <input type="range" class="custom-range" min="0" max="3" step="0.1" value={{ slider['sharp'] }} id="sharpness" name="sharp" onchange="updateTextInput('sharpness_value', this.value);">
@@ -165,11 +165,12 @@
                 </div>
 
                 <div class="col-sm-5 mx-auto my-2 p-2 text-center stripes rounded">
-                  <div class="h5">Sharpen</div>
+                  <div class="h5">Sharpen & GreyScale</div>
                   <form method="POST">
-                    <button type="submit" name="sharpen_button" value="0" class="btn btn-primary">Sharpen</button>
-                    <button type="submit" name="sharpen_button" value="1" class="btn btn-primary">Detail</button>
-                    <button type="submit" name="sharpen_button" value="2" class="btn btn-primary">UnsharpMask</button>
+                    <button type="submit" name="sharpen_button" value="0" class="btn btn-primary">GreyScale</button>
+                    <button type="submit" name="sharpen_button" value="1" class="btn btn-primary">B&W</button>
+                    <button type="submit" name="sharpen_button" value="2" class="btn btn-primary">Detail</button>
+                    <button type="submit" name="sharpen_button" value="3" class="btn btn-primary">UnsharpMask</button>
                   </form>
                 </div>
 
@@ -201,7 +202,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">Angle</span>
                       </div>
-                      <input type="text" class="form-control" name="angle" placeholder="angle">
+                      <input type="text" class="form-control" name="angle" placeholder="angle" required>
                     </div>
 
                     <button type="submit" name="rotate_button" value="rotate" class="btn btn-primary btn-block"><b>Rotate</b></button>
@@ -214,14 +215,14 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">Width</span>
                       </div>
-                      <input type="text" class="form-control" name="width" placeholder="width">
+                      <input type="text" class="form-control" name="width" placeholder="width" required>
                     </div>
 
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <span class="input-group-text">Height</span>
                       </div>
-                      <input type="text" class="form-control" name="height" placeholder="height">
+                      <input type="text" class="form-control" name="height" placeholder="height" required>
                     </div>
 
                     <button type="submit" name="resize_button" value="resize" class="btn btn-primary btn-block"><b>Resize</b></button>
@@ -240,16 +241,16 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="">Start coords.</span>
                       </div>
-                      <input type="text" name="start_x" class="form-control" placeholder="x" id="start_x" readonly>
-                      <input type="text" name="start_y" class="form-control" placeholder="y" id="start_y" readonly>
+                      <input type="text" name="start_x" class="form-control" placeholder="x" id="start_x" readonly required>
+                      <input type="text" name="start_y" class="form-control" placeholder="y" id="start_y" readonly required>
                     </div>
 
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="">End coords.</span>
                       </div>
-                      <input type="text" name="end_x" class="form-control" placeholder="x + w" id="end_x" readonly>
-                      <input type="text" name="end_y" class="form-control" placeholder="y + h" id="end_y" readonly>
+                      <input type="text" name="end_x" class="form-control" placeholder="x + w" id="end_x" readonly required>
+                      <input type="text" name="end_y" class="form-control" placeholder="y + h" id="end_y" readonly required>
                     </div>
 
                     <button type="submit" name="crop_button" value="crop" class="btn btn-primary btn-block"><b>Crop</b></button>
