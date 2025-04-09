@@ -1,121 +1,121 @@
-# Sahil & Deepak Image Manipulator 🎨🖼️
+# 🖼️ Sahil & Deepak Image Manipulator
 
-An intuitive, web-based image editing tool developed by **Deepak** and **Sahil**, empowering users to apply filters and transformations to their images with ease. Built using **Flask**, **Pillow**, and **JavaScript**, this tool offers a smooth editing experience through a modern interface.
-
----
-
-## 📸 Introduction
-
-The **Sahil & Deepak Image Manipulator** is an online tool that enables users to:
-
-- Upload and edit images in real-time
-- Apply a wide range of filters and enhancements
-- Download the final manipulated image
-- Reset to the original image anytime
-
-This project utilizes **Flask** for backend and routing, and **Pillow** for robust image processing.
+An intuitive and user-friendly online image editing tool developed by **Deepak** and **Sahil**, built using **Python**, **Flask**, and **Pillow**. This web-based application allows users to apply a variety of image transformations and filters with ease.
 
 ---
 
-## 🛠️ Technologies Used
+## 📌 Introduction
 
-- **Python**: Backend logic and image processing
-- **Flask**: Web application framework
-- **Pillow**: Image manipulation (enhancements, filters, transformations)
-- **JavaScript**: Value sliders, crop area selector
-- **HTML/CSS**: Web page structure and styling
-- **Templates**: Custom and modified templates for the frontend
+The **Sahil & Deepak Image Manipulator** is an online tool that allows users to upload, edit, and download images with a variety of effects, including:
+
+- Color enhancement
+- Brightness and contrast adjustment
+- Multiple filters like blur, grayscale, detail, etc.
+- Image transformations (crop, rotate, resize)
+
+---
+
+## 💻 Technologies Used
+
+- **Python** – Core language for backend processing
+- **Flask** – Lightweight framework for web application
+- **Pillow** – Python Imaging Library for manipulating images
+- **JavaScript** – For sliders and crop area selectors
+- **HTML/CSS/JS** – For frontend design and interactivity
+- **Templates** – Modified ready-made templates for the UI
 
 ---
 
 ## ✨ Features
 
-### 🔧 Adjustments (Using `ImageEnhance`)
+### 🎛️ Adjustments
+(Implemented using `ImageEnhance`)
+- **Color** – Modify image saturation
+- **Brightness** – Lighten or darken the image
+- **Contrast** – Increase or decrease contrast
+- **Sharpness** – Sharpen or soften the image
 
-- **Color**: Control saturation
-- **Brightness**: Lighten or darken the image
-- **Contrast**: Enhance or reduce contrast
-- **Sharpness**: Fine-tune image clarity
+### 🎨 Filters
+(Implemented using `ImageFilter`)
+- **Blur**, **BoxBlur(1)**, **Gaussian Blur**
+- **Grayscale** – Convert to shades of grey
+- **Black & White** – B&W conversion using pixel threshold
+- **Detail**, **UnsharpMask**
 
-### 🎨 Filters (Using `ImageFilter`)
+### 🔧 Transformations
+- **Crop** – Area selector with cropping
+- **Rotate** – Rotate by user-specified angle
+- **Resize** – Set custom width & height
 
-- **Blur**, **BoxBlur**, **Gaussian Blur**
-- **Detail** and **UnsharpMask**
-- **Greyscale** and **Black & White**
-
-### 🔁 Transformations
-
-- **Crop**: Select and crop part of the image
-- **Rotate**: Rotate image by input angle
-- **Resize**: Change dimensions as required
-
-### 📤 Download & Reset
-
-- **Original Button**: Revert to original image
-- **Download Button**: Save the final image
+### ⬇️ Other Utilities
+- **Reset to Original** – Undo all changes at once
+- **Download** – Save the final image locally
 
 ---
 
-## 🔍 Implementation Details
+## 🧠 Implementation Overview
 
-- Uploaded images are saved in a `static/` folder
-- A duplicate of the original image is created to preserve the original
-- Transformations and filters are applied to the duplicate
-- All edits are processed via the backend using Pillow
-- JavaScript-enabled sliders and selectors enhance frontend interactions
-- Edited images are returned for live preview and download
+- Image is uploaded and saved in the `static/` folder
+- A copy of the image is made for all transformations
+- User input (filters, adjustments) is sent to the backend
+- The backend processes the image using Pillow
+- The modified image is rendered back for the user
 
 ---
 
 ## 🖥️ User Interface
 
-- **Home Page**: Includes image upload, project description, and developer contact details (edited by both)
-- **Upload/Edit Page**: Designed and built by Sahil with dynamic components
-- **Interactive Elements**: Sliders, crop tools, and preview features
+- **Home Page**:
+  - Built using a ready-made responsive template (edited by both)
+  - Includes image upload, website details, and contact info
+
+- **Editor Page**:
+  - Fully custom-built by Sahil
+  - Contains sliders, selectors, and image display for real-time editing
 
 ---
 
 ## 🚀 Deployment
 
-- 📦 Project hosted on [GitHub](#)  
-- 🌐 Live Site deployed using [Render](#) (replace with actual links)
+- 🗂️ [GitHub Repository](https://github.com/Deepak-kumar2004/Image_editor.git)
+- 🌍 [Live App on Render](https://sahil-and-deepak-image-manipulator.onrender.com)
 
 ---
 
-## 👥 Contribution
+## 🤝 Contributions
 
 | Task | Deepak | Sahil |
 |------|--------|-------|
-| Flask Backend & Workflow | ✅ | |
-| Frontend UI with HTML/CSS/JS | | ✅ |
-| Image Processing Functions | ✅ | |
-| Crop/Slider Implementation | ✅ | ✅ |
-| Grayscale, B&W, Blur Functions | ✅ | |
-| Homepage Template Integration | ✅ | ✅ |
-| Code Optimization & Cleanup | ✅ | |
-| Meet the Developer Section | ✅ | ✅ |
-| Deployment on Render | ✅ | ✅ |
+| Flask backend development | ✅ | |
+| Frontend design (HTML/CSS/JS) | | ✅ |
+| Image processing with Pillow | ✅ | ✅ |
+| Crop area & slider functionality | ✅ | ✅ |
+| Homepage template editing | ✅ | ✅ |
+| Meet the Developers section | ✅ | ✅ |
+| Code structuring & cleanup | ✅ | |
+| Error fixing & deployment | ✅ | ✅ |
 
 ---
 
-## ✅ Conclusion
+## 📝 Conclusion
 
-> *"Working on this project has not only strengthened our technical abilities but also taught us invaluable lessons in collaboration, testing, and clear communication. We're proud of the Sahil & Deepak Image Manipulator and look forward to building more amazing projects together!"*
+This project has been a deeply rewarding experience for both of us. We learned not just technical tools like Flask and Pillow, but also improved our collaboration, problem-solving, and software testing skills.
+
+We are proud of what we've built and are excited to apply our learnings in future projects.
 
 ---
 
 ## 📚 References
 
-- Frontend help from **ChatGPT**, **Gemini**, and **Copilot**
-- Used a **ready-made homepage template** for a more responsive UI
+- Assistance from **ChatGPT**, **Gemini**, and **Copilot** (especially for frontend JS work)
+- Used a ready-made homepage template for a more attractive UI
 
 ---
 
-## 🔗 Useful Links
+## 📎 Appendices
 
-- 🔗 [Live App](#) *(Insert deployed Render link)*
-- 💻 [GitHub Repository](#) *(Insert your GitHub repo link)*
+- 🌐 [Live Application](https://sahil-and-deepak-image-manipulator.onrender.com)
 
 ---
 
-*Made with ❤️ by Deepak & Sahil*
+> *Made with 💖 by Deepak & Sahil*
