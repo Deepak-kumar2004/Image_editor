@@ -74,6 +74,21 @@ The **Sahil & Deepak Image Manipulator** is an online tool that allows users to 
   - Contains sliders, selectors, and image display for real-time editing
 
 ---
+## 🖼️ Demo (Screenshots)
+
+### 🏠 Home Page  
+![Home Page](ScreenShot/home.png)
+![Home Page](ScreenShot/home2.png)
+
+### 📤 Image Upload Page  
+![[Upload Page](ScreenShot/)](https://github.com/Deepak-kumar2004/Image_editor/blob/main/ScreenShot/After%20Image%20uploaded.png)
+
+### 🎛️ Adjustment Controls  
+![Adjustments](ScreenShot/Filters.png)
+
+### 🎨 Filters in Action  
+![[Filters](ScreenShot/GreyScale.png)
+![Blur](ScreenShot/blur.png)
 
 ## 🚀 Deployment
 
