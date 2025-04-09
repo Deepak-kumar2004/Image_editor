@@ -77,7 +77,6 @@ The **Sahil & Deepak Image Manipulator** is an online tool that allows users to 
 
 ## 🚀 Deployment
 
-- 🗂️ [GitHub Repository](https://github.com/Deepak-kumar2004/Image_editor.git)
 - 🌍 [Live App on Render](https://sahil-and-deepak-image-manipulator.onrender.com)
 
 ---
@@ -97,11 +96,9 @@ The **Sahil & Deepak Image Manipulator** is an online tool that allows users to 
 
 ---
 
-## 📝 Conclusion
+## ✅ Conclusion
 
-This project has been a deeply rewarding experience for both of us. We learned not just technical tools like Flask and Pillow, but also improved our collaboration, problem-solving, and software testing skills.
-
-We are proud of what we've built and are excited to apply our learnings in future projects.
+> *"Working on this project has not only strengthened our technical abilities but also taught us invaluable lessons in collaboration, testing, and clear communication. We're proud of the Sahil & Deepak Image Manipulator and look forward to building more amazing projects together!"*
 
 ---
 
