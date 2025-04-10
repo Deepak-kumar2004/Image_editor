@@ -78,13 +78,16 @@ The **Sahil & Deepak Image Manipulator** is an online tool that allows users to 
 
 - **🏠 Home Page**  
   ![Home Page](ScreenShot/Home.png)
-  ![Home Page](ScreenShot/Home2.png)  
+  ![Home Page](ScreenShot/Home2.png)
+  
 - **📤 Image Upload Page**  
-  ![Upload Page](ScreenShot/After%20Image%20uploaded.png) 
+  ![Upload Page](ScreenShot/After%20Image%20uploaded.png)
+  
 - **🎛️ Adjustment Controls**  
   ![Adjustments](ScreenShot/Filters.png)
+  
 - **🎨 Filters in Action** 
-  ![Filters](ScreenShot/GreyScale.png)
+  ![GreyScale](ScreenShot/GreyScale.png)
   ![Blur](ScreenShot/blur.png)
 
 ## 🚀 Deployment
